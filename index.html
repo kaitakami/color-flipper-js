@@ -16,25 +16,40 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="change-color">
     <nav id="nav">
       <p class="nav__text">Color Flipper</p>
       <div class="nav__mode">
-        <a href="index.html">Simple</a>
-        <a href="hex.html">Hex</a>
+        <a href="index.html">Hex</a>
       </div>
     </nav>
 
     <main id="main">
       <div class="main__container">
-        <p>Background color: #1f1f1f</p>
+        <p id="color-display">Background color: #1f1f1f</p>
 
         <button id="main-button">Change color</button>
       </div>
     </main>
 
+    <footer class="footer">
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Kai Takami
+      </p>
+      <a href="https://github.com/kaitakami" target="_blank">
+        <i class="fab fa-github"></i
+      ></a>
+    </footer>
     <script src="script.js"></script>
-    <script src="hex.js"></script>
   </body>
 </html>
